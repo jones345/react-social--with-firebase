@@ -1,12 +1,12 @@
 import React from 'react'
 import signup from './signup.css'
-
+import {Link} from 'react-router-dom'
 export default function SignUp() {
     return (
          <div className="relative min-h-screen flex ">
         <div className="flex flex-col sm:flex-row items-center md:items-start sm:justify-center md:justify-start flex-auto min-w-0 bg-white">
           <div className="sm:w-1/2 xl:w-3/5 h-full hidden md:flex flex-auto items-center justify-center p-10 overflow-hidden bg-purple-900 text-white bg-no-repeat bg-cover relative"
-            style={{backgroundImage: "url(" + "https://images.unsplash.com/photo-1579451861283-a2239070aaa9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80 " + ")"}}>
+            style={{backgroundImage: "url(" + "https://i1.wp.com/omegle.ws/wp-content/uploads/2021/03/chats-online.png" + ")"}}>
             <div className="absolute bg-gradient-to-b from-indigo-600 to-blue-500 opacity-75 inset-0 z-0"></div>
             <div className="w-full  max-w-md z-10">
               <div className="sm:text-4xl xl:text-5xl font-bold leading-tight mb-6">Reference site about Lorem Ipsum..</div>
@@ -33,9 +33,9 @@ export default function SignUp() {
             <div className="max-w-md w-full space-y-8">
               <div className="text-center">
                 <h2 className="mt-6 text-3xl font-bold text-gray-900">
-                  Welcom Back!
+                  Create Account with us
                 </h2>
-                <p className="mt-2 text-sm text-gray-500">Please sign in to your account</p>
+                <p className="mt-2 text-sm text-gray-500">Please sign up to your account with </p>
               </div>
               <div className="flex flex-row justify-center items-center space-x-3">
                 <a href="https://www.behance.net/ajeeshmon" target="_blank"
@@ -91,9 +91,9 @@ export default function SignUp() {
                     </label>
                   </div>
                   <div className="text-sm">
-                    <a href="#" className="text-indigo-400 hover:text-blue-500">
+                    <Link to={'forgot'} className="text-indigo-400 hover:text-blue-500">
                       Forgot your password?
-                    </a>
+                    </Link>
                   </div>
                 </div>
                 <div>
@@ -103,10 +103,10 @@ export default function SignUp() {
                   </button>
                 </div>
                 <p className="flex flex-col items-center justify-center mt-10 text-center text-md text-gray-500">
-                  <span>Don't have an account?</span>
-                  <a href="#"
+                  <span>have an account?</span>
+                  <Link to={'signup'}
                     className="text-indigo-400 hover:text-blue-500 no-underline hover:underline cursor-pointer transition ease-in duration-300">Sign
-                    up</a>
+                    in</Link>
                 </p>
               </form>
             </div>
